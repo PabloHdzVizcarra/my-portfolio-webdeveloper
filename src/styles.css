@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'JetBrains Mono', monospace;
+    height: 100%;
 }
 
 .container {
@@ -11,6 +12,18 @@ body, html {
     min-height: 100%;
 }
 
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .name__title {
-    color: #FE6A6A;
+    color: #41C7C7;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.name__type {
+    margin: 5px 0;
+    color: #D8DEE9;
 }
