@@ -29,6 +29,13 @@ body, html
 
 /*------------------Landing Page-------------------------*/
 
+.container-landing
+{
+    height: 100vh;
+    background-color: #2E3440;
+    padding: 0 200px;
+}
+
 .container
 {
     display: flex;
