@@ -35,7 +35,7 @@ body, html
     flex-direction: column;
     background-color: #2E3440;
     min-height: 100%;
-    padding: 100px 200px 0 200px;
+    padding: 50px 200px 0 200px;
 }
 
 .name
@@ -273,6 +273,19 @@ body, html
     align-items: center;
     flex-direction: column;
     padding: 25px;
+}
+
+.footer__title
+{
+    display: flex;
+    width: 100%;
+    padding: 0 200px;
+}
+
+.footer__title__text
+{
+    color: var(--red-text);
+    font-size: 2rem;
 }
 
 .footer__social-networks
