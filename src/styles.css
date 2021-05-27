@@ -330,3 +330,68 @@ body, html
     height: 24px;
     margin: 0 5px;
 }
+
+@media (max-width: 1024px)
+{
+/*-------------landing-----------------------*/
+    .container-landing {
+        padding: 10px;
+        height: min-content;
+    }
+    .landing-info
+    {
+        flex-direction: column-reverse;
+    }
+
+    .name {
+        height: auto;
+    }
+
+    .landing-info__image
+    {
+        width: 40%;
+        margin: 40px 0;
+    }
+
+    .landing-code
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container
+    {
+        padding: 40px 10px 10px;
+        min-height: max-content;
+    }
+
+    .project__description__info__technologies
+    {
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .project__description__info__technologies__tech
+    {
+        width: 50%;
+    }
+
+    .project__name
+    {
+        text-align: center;
+    }
+
+    .footer__creator
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__skills
+    {
+        flex: 0;
+    }
+}
+
