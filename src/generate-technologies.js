@@ -7,4 +7,4 @@ function generateSkills (skills) {
   return result;
 }
 
-export { generateSkills };
+export default generateSkills;

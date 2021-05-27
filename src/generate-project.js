@@ -1,4 +1,4 @@
-import { generateSkills } from "./generate-technologies";
+import generateSkills from "./generate-technologies";
 
 function generateProject (data, elementHTML) {
   let project = `
@@ -28,4 +28,4 @@ function generateProject (data, elementHTML) {
   elementHTML.insertAdjacentHTML("beforeend", project);
 }
 
-export { generateProject };
+export default generateProject;
