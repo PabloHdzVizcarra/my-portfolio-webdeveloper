@@ -27,6 +27,8 @@ body, html
     height: 100%;
 }
 
+/*------------------Landing Page-------------------------*/
+
 .container
 {
     display: flex;
@@ -106,4 +108,68 @@ body, html
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
+}
+
+/*-------------------------Skills Area*-----------------------------*/
+
+.skills
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.skills__title
+{
+    font-size: 2rem;
+    color: var(--red-text);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills__container-skill
+{
+    display: flex;
+    background-color: var(--nord-gray-2);
+    padding: 30px;
+    border-radius: 6px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills__title__category
+{
+    font-size: 1.7rem;
+    color: var(--green-text);
+}
+
+.skills__container-skill__image
+{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.skills__container-skill__generic
+{
+    width: 70px;
+    height: 70px;
+}
+
+.skills__container-skill__optional
+{
+    color: var(--nord-white-2);
+    font-size: 1.8rem;
+}
+
+.skills__container-skill__mongo
+{
+    width: 200px;
+}
+
+.skills__container-skill__node
+{
+    width: 200px;
+    height: 80px;
 }
