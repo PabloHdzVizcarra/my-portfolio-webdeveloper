@@ -393,5 +393,9 @@ body, html
     {
         flex: 0;
     }
+
+    .footer__title{
+        padding: 0 15px;
+    }
 }
 
