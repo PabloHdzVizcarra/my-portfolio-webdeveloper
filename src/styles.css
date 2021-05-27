@@ -374,7 +374,7 @@ body, html
 
     .project__description__info__technologies__tech
     {
-        width: 50%;
+        width: max-content;
     }
 
     .project__name
