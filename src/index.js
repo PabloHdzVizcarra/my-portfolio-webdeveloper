@@ -1,59 +1,38 @@
 import "./styles.css";
-import "../dist/images/bootstrap.svg"
+import "./animation-text";
 
-let TxtType = function (el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = "";
-  this.tick();
-  this.isDeleting = false;
-};
+const projects = document.querySelector(".projects");
 
-TxtType.prototype.tick = function () {
-  let i = this.loopNum % this.toRotate.length;
-  let fullTxt = this.toRotate[i];
+function generateProject () {
+  let project = `
+    <div class="project__container">
+            <h2 class="project__name">Pelis Data</h2>
+            <div class="project__description">
+                <img src="https://res.cloudinary.com/du9fag77u/image/upload/v1602903485/Pelis%20Data.png" alt="" class="project__description__image">
+                <div class="project__description__info">
+                    <p class="project__description__info__text">
+                        Aplicación donde puedes consultar información sobre películas,
+                        cuenta con registro y login de usuarios se uso firebase para ese fin,
+                        los datos vienen de la API de OMDb API
+                    </p>
+                    <ul class="project__description__info__technologies">
+                        <li class="project__description__info__technologies__tech">JavaScript</li>
+                        <li class="project__description__info__technologies__tech">JavaScript</li>
+                        <li class="project__description__info__technologies__tech">JavaScript</li>
+                        <li class="project__description__info__technologies__tech">JavaScript</li>
+                        <li class="project__description__info__technologies__tech">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project__buttons">
+                <a class="project__buttons__demo" href="https://www.google.com">
+                    <img src="./images/github.svg" alt="" class="project__buttons__item">
+                </a>
+                <a class="project__buttons__github" href="https://www.google.com">
+                    <img src="./images/web2.svg" alt="" class="project__buttons__item">
+                </a>
+            </div>
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = "<span class=\"wrap\">" + this.txt + "</span>";
-
-  let that = this;
-  let delta = 200 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function () {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function () {
-  let elements = document.getElementsByClassName("typewrite");
-  for (let i = 0; i < elements.length; i++) {
-    let toRotate = elements[i].getAttribute("data-type");
-    let period = elements[i].getAttribute("data-period");
-    if (toRotate) {
-      new TxtType(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  let css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
-};
+        </div>
+  `;
+}

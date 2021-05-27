@@ -137,7 +137,6 @@ body, html
 .skills__container-skill
 {
     display: flex;
-    /*background-color: var(--nord-gray-2);*/
     padding: 30px;
     border-radius: 6px;
     align-items: center;
@@ -169,35 +168,145 @@ body, html
     height: 80px;
 }
 
+.container__skills
+{
+    padding: 0 40px;
+    flex: 1;
+}
+
 /*------------------------Projects------------------------*/
 
 .projects
 {
     display: flex;
-    flex-direction: column;
     padding: 0 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .project__container
 {
-    border: 1px solid var(--nord-white-1);
+    flex: 1;
     border-radius: 4px;
-    padding: 2px;
+    padding: 20px;
+    background: rgba(46, 52, 64, .6);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    margin: 10px;
 }
 
-.project__container__title
-{
-    display: flex;
-    border-bottom: 1px solid var(--nord-white-1);
-
-}
-
-.project__container__title__symbol
+.project__name
 {
     color: var(--green-text);
+    margin: 10px 0;
 }
 
-.project__container__title__text
+.project__description
 {
+    display: flex;
+}
 
+.project__description__image
+{
+    width: 50%;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.project__description__info
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+}
+
+.project__description__info__text
+{
+    flex: 0.8;
+    color: var(--nord-white-1);
+    font-size: 0.9rem;
+}
+
+.project__description__info__technologies
+{
+    flex: 0.2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project__description__info__technologies__tech
+{
+    text-decoration: none;
+    list-style: none;
+    margin: 5px;
+    background-color: var(--nord-white-1);
+    height: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+    color: var(--nord-gray-3);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.project__buttons
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.project__buttons__item
+{
+    height: 50px;
+    width: 50px;
+}
+
+/*-------------------Contact Me-------------------------*/
+
+.footer
+{
+    display: flex;
+    background-color: var(--nord-gray-3);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.footer__social-networks
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.footer__social-networks__icon
+{
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+}
+
+.footer__email
+{
+    text-align: center;
+    color: var(--nord-white-3);
+    margin-bottom: 10px;
+}
+
+.footer__creator
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: var(--nord-white-3);
+}
+
+
+.footer__creator__image
+{
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
 }
