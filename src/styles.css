@@ -70,15 +70,7 @@ body, html
 
 .landing-code
 {
-    padding: 20px 100px 20px 20px;
     height: 100%;
-}
-
-.landing-code > h2 > a
-{
-    text-decoration: none;
-    color: var(--red-text);
-    font-size: 2rem;
 }
 
 .landing-info
@@ -88,18 +80,29 @@ body, html
     align-items: center;
 }
 
+.landing-code__container
+{
+    margin-bottom: 20px;
+}
+
+.landing-code__letters
+{
+    text-decoration: none;
+    color: var(--red-text);
+    font-size: 2rem;
+}
+
 .landing-info__text
 {
     color: var(--nord-white-2);
-    margin: 0;
-    padding: 10px;
     font-size: 20px;
     width: 70%;
 }
 
 .landing-info__image
 {
-    width: 30%;
+    border-radius: 6px;
+    width: 20%;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
