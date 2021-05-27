@@ -1,4 +1,6 @@
-console.log("hello from js");
+import "./styles.css";
+import "../dist/images/bootstrap.svg"
+
 let TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
