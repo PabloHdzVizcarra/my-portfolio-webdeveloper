@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-depl
+spec:
+  selector:
+    matchLabels:
+      app: my-portfolio
+  template:
+    metadata:
+      labels:
+        app: my-portfolio
+    spec:
+      containers:
+        - name: my-portfolio
+          image: pablohdz/my-portfolio
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "300m"
+            limits:
+              memory: "512Mi"
+              cpu: "750m"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-depl
+spec:
+  selector:
+    app: my-portfolio
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+      name: my-porfolio
