@@ -175,6 +175,11 @@ body, html
     height: 80px;
 }
 
+.skills__container-skill__deno
+{
+    width: 90px;
+}
+
 .container__skills
 {
     padding: 0 40px;
