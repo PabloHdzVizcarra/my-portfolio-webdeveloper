@@ -14,11 +14,11 @@ function generateProject (data, elementHTML) {
                 </div>
             </div>
             <div class="project__buttons">
-                <a class="project__buttons__demo" href="${data.code}">
-                    <img src="./images/github.svg" alt="" class="project__buttons__item">
+                <a class="project__button" href="${data.code}">
+                    GitHub
                 </a>
-                <a class="project__buttons__github" href="${data.demo}">
-                    <img src="./images/web2.svg" alt="" class="project__buttons__item">
+                <a class="project__button" href="${data.demo}">
+                    Demo
                 </a>
             </div>
 

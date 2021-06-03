@@ -168,6 +168,7 @@ body, html
     list-style: none;
     font-size: 1.3rem;
     font-weight: bold;
+    margin: 4px 0;
 }
 
 .skills__container__list
@@ -230,7 +231,7 @@ body, html
     background: rgba(46, 52, 64, .6);
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
-    margin: 10px;
+    margin: 20px 0;
 }
 
 .project__name
@@ -285,6 +286,15 @@ body, html
     font-size: 1.1rem;
     font-weight: bold;
 }
+.project__button
+{
+    text-decoration: none;
+    color: var(--nord-white-2);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    transition: 300ms ease color;
+}
 
 .project__buttons
 {
@@ -292,6 +302,11 @@ body, html
     justify-content: space-evenly;
     padding: 10px;
     margin-top: 30px;
+}
+
+.project__button:hover
+{
+    color: var(--nord-frost-1);
 }
 
 .project__buttons__item
@@ -305,7 +320,7 @@ body, html
 .footer
 {
     display: flex;
-    background-color: var(--nord-gray-3);
+    background-color: #2E3440;
     justify-content: center;
     align-items: center;
     flex-direction: column;
