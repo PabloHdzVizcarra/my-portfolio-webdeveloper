@@ -70,7 +70,7 @@ body, html
 .name__type
 {
     margin: 5px 0;
-    color: var(--nord-frost-2);
+    color: var(--nord-frost-1);
 }
 
 .landing
@@ -142,12 +142,19 @@ body, html
 .skills__title__category
 {
     font-size: 1.7rem;
-    color: var(--nord-white-2);
+    color: var(--red-text);
+}
+
+.skills__container
+{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .skills__container-skill
 {
     display: flex;
+    flex-direction: column;
     padding: 30px;
     border-radius: 6px;
     align-items: center;
@@ -155,7 +162,21 @@ body, html
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.skills__container__skill
+{
+    color: var(--nord-white-2);
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 
+.skills__container__list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .skills__container-skill__generic
 {
     width: 70px;
@@ -214,7 +235,7 @@ body, html
 
 .project__name
 {
-    color: var(--green-text);
+    color: var(--red-text);
     margin: 10px 0;
 }
 
