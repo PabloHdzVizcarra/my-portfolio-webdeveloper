@@ -148,7 +148,7 @@ body, html
 .skills__container
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .skills__container-skill
@@ -169,6 +169,7 @@ body, html
     font-size: 1.3rem;
     font-weight: bold;
     margin: 4px 0;
+    text-align: center;
 }
 
 .skills__container__list
@@ -176,6 +177,7 @@ body, html
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 
 }
 .skills__container-skill__generic
