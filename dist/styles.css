@@ -35,7 +35,7 @@ body, html
 
 .container-landing
 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #2E3440;
     padding: 0 200px;
 }
