@@ -1,4 +1,4 @@
-import "./styles.css";
+// import "./styles.css"; Added to development
 import "./animation-text";
 import generateProject from "./generate-project";
 
