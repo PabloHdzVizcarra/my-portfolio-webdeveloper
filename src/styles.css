@@ -378,71 +378,84 @@ body, html
     margin: 0 5px;
 }
 
-@media (max-width: 1024px)
+@media (max-width: 992px)
 {
 /*-------------landing-----------------------*/
-    .container-landing {
+
+    .container-landing
+    {
         padding: 10px;
+    }
+    .name
+    {
+        font-size: 1.2rem;
+        justify-content: center;
         height: min-content;
     }
+
+    .name__type
+    {
+        margin-top: 20px;
+        text-align: center;
+    }
+
     .landing-info
     {
         flex-direction: column-reverse;
     }
 
-    .name {
-        height: auto;
-    }
-
     .landing-info__image
     {
         width: 40%;
-        margin: 40px 0;
     }
 
-    .landing-code
+    .landing-code__container
     {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .landing-info__text
+    {
+        /*text-align: center;*/
+        width: 100%;
     }
 
     .container
     {
-        padding: 40px 10px 10px;
-        min-height: max-content;
+        padding: 10px;
     }
 
-    .project__description__info__technologies
+    .skills__container
     {
-        align-items: center;
-        margin-top: 5px;
+        flex-wrap: wrap;
     }
 
-    .project__description__info__technologies__tech
-    {
-        width: max-content;
-    }
-
-    .project__name
+    .skills__title__category
     {
         text-align: center;
     }
 
-    .footer__creator
+    .project__name
     {
-        display: flex;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .project__description
+    {
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
-    .container__skills
+    .project__description__image
     {
-        flex: 0;
+        width: 80%;
     }
 
-    .footer__title{
-        padding: 0 15px;
+    .project__description__info__text
+    {
+        font-size: 14px;
     }
 }
 
