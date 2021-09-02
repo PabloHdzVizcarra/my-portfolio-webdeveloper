@@ -8,6 +8,8 @@ let url = "https://9dhcpnsgga.execute-api.us-east-2.amazonaws.com/default/person
 
 fetch(url).then(response => response.json()).then(data => {
   data.map((project) => {
+    console.log(project);
+    console.log("EXAMPLE");
     generateProject(project, projects);
   });
 }).catch(console.log);
