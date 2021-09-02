@@ -5,7 +5,7 @@
     <title>Pablo Hernandez</title>
     <link rel="icon" href="./images/coding.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;500;700&display=swap"
           rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
 <div class="container-landing">
     <header class="name">
         <h1 class="name__title">Pablo Urbano Hernandez Vizcarra</h1>
-        <h3 class="name__type">Web Developer</h3>
+        <h3 class="name__type">Software Developer</h3>
     </header>
 
     <div class="landing">
@@ -21,9 +21,11 @@
         <div class="landing-info">
             <div class="landing-code">
                 <h2 class="landing-code__container">
-                    <a href="" class="typewrite landing-code__letters js-text-desc"
+                    <a href=""
+                       class="typewrite landing-code__letters js-text-desc"
                        data-period="2000"
                        data-type='[
+                       "java -jar target/*.jar",
                    "./mvnw spring-boot:run",
                    "create-react-app",
                    "docker run nginx",
@@ -36,14 +38,17 @@
                     I am a self-taught web developer focused on web technologies,
                     I like to write code applying TDD.
                     <br>
-                    I am looking for my first job in a company that allows me to apply all my acquired knowledge and
+                    I am looking for my first job in a company that allows me to apply all
+                    my acquired knowledge and
                     allow
                     me to continue improving and learning new technologies.
                 </p>
                 <br>
                 <p class="landing-info__text">
-                    Lately I have learned a lot about back-end technologies, the topic of microservices seems very
-                    interesting to me, I am interested in the Cloud focused on Amazon Web Services, Docker and Kubernetes
+                    Lately I have learned a lot about back-end technologies, the topic of
+                    microservices seems very
+                    interesting to me, I am interested in the Cloud focused on Amazon Web
+                    Services, Docker and Kubernetes
                     are two technologies that I also like.
                 </p>
             </div>
@@ -61,7 +66,7 @@
     <div class="skills">
         <h2 class="skills__title">> Skills</h2>
         <div class="skills__container">
-            <div class="skills__container__list">
+            <div class="skills__container__list js-front-end-skills">
                 <h3 class="skills__title__category">Front-end</h3>
                 <ul class="skills__container-skill">
                     <li class="skills__container__skill">HTML</li>
@@ -69,7 +74,6 @@
                     <li class="skills__container__skill">Javascript</li>
                     <li class="skills__container__skill">Typescript</li>
                     <li class="skills__container__skill">React JS</li>
-                    <li class="skills__container__skill">Redux</li>
                     <li class="skills__container__skill">Bootstrap</li>
                 </ul>
             </div>
@@ -77,11 +81,12 @@
             <div class="skills__container__list">
                 <h3 class="skills__title__category">Back-end</h3>
                 <ul class="skills__container-skill">
+                    <li class="skills__container__skill">Java</li>
+                    <li class="skills__container__skill">Spring Boot</li>
                     <li class="skills__container__skill">Node JS</li>
                     <li class="skills__container__skill">Express</li>
-                    <li class="skills__container__skill">Deno</li>
                     <li class="skills__container__skill">MongoDB</li>
-                    <li class="skills__container__skill">Redis</li>
+                    <li class="skills__container__skill">MySQL</li>
                 </ul>
             </div>
 
@@ -89,9 +94,9 @@
                 <h3 class="skills__title__category">Others</h3>
                 <ul class="skills__container-skill">
                     <li class="skills__container__skill">Ubuntu</li>
-                    <li class="skills__container__skill">React Testing Library</li>
                     <li class="skills__container__skill">GitHub</li>
-                    <li class="skills__container__skill">Jest</li>
+                    <li class="skills__container__skill">GitHub Actions</li>
+                    <li class="skills__container__skill">Test Drive Development TDD</li>
                     <li class="skills__container__skill">Docker</li>
                     <li class="skills__container__skill">Kubernetes</li>
                 </ul>
@@ -115,17 +120,21 @@
     </div>
     <div class="footer__social-networks">
         <a href="https://github.com/PabloHdzVizcarra">
-            <img src="./images/fo-github.svg" alt="GitHub" class="footer__social-networks__icon">
+            <img src="./images/fo-github.svg" alt="GitHub"
+                 class="footer__social-networks__icon">
         </a>
         <a href="https://www.linkedin.com/in/pablo-urbano-hernandez-vizcarra-5aa691184/">
-            <img src="./images/fo-linkedin.svg" alt="Linkedin" class="footer__social-networks__icon">
+            <img src="./images/fo-linkedin.svg" alt="Linkedin"
+                 class="footer__social-networks__icon">
         </a>
         <a href="https://twitter.com/PabloHzVizcarra">
-            <img src="./images/fo-twitter.svg" alt="Twitter" class="footer__social-networks__icon">
+            <img src="./images/fo-twitter.svg" alt="Twitter"
+                 class="footer__social-networks__icon">
         </a>
     </div>
     <h4 class="footer__email">pablourbanohdzvizcarra@gmail.com</h4>
-    <h4 class="footer__creator">Made with <img src="./images/heart.svg" alt="heart" class="footer__creator__image">
+    <h4 class="footer__creator">Made with <img src="./images/heart.svg" alt="heart"
+                                               class="footer__creator__image">
         by Pablo Hernandez</h4>
 </footer>
 
