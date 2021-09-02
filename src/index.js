@@ -7,9 +7,13 @@ const projects = document.querySelector(".projects");
 let url = "https://9dhcpnsgga.execute-api.us-east-2.amazonaws.com/default/personal-projects";
 
 fetch(url).then(response => response.json()).then(data => {
-  data.map((project) => {
-    console.log(project);
-    console.log("EXAMPLE");
+  let fetchProjects = data[0].dataProjects;
+  let fetchTextDescription = data[1].textMessage;
+
+
+  console.log(fetchTextDescription);
+  fetchProjects.map((project) => {
     generateProject(project, projects);
   });
 }).catch(console.log);
+
